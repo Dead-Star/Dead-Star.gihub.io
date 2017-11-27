@@ -1,0 +1,464 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+body
+	background: $main
+	background-image: url("../img/gradient.png")
+	background-image: url("../img/gradient.png")
+	background-position: center
+	background-size: contain
+
+
+
+
+
+*		
+	font-style: italic
+
+	outline: none	
+
+
+.main-header
+	background-size: cover
+	position: relative
+	background-repeat: no-repeat
+	height: 100vh
+	width: 92%
+	margin-left: 4%
+	padding: 0
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		background: rgba($main, 0.4)
+.h-line
+	position: absolute
+	background: rgba(0,0,0, 0)
+	height: 100vh
+	width: 4%
+	color: #fff
+	margin: 0
+	padding: 0
+	
+		
+.burger-menu
+		width: 100%
+		height: 5%
+		position: absolute
+		top: 5%
+		left: 0
+		&:hover
+			background-color: rgba(0,0,0,0.1)
+		&:active
+			background-color: rgba(226,133,134, 0.5)
+
+		&::after
+			content: ''
+			position: absolute
+			width: 70%
+			height: 10%
+			background-color: #FFF
+			left: 0
+			margin-left: 15%
+			border-radius: 20%
+			top: 30%
+		&::before
+			content: ''
+			position: absolute
+			width: 70%
+			height: 10%
+			background-color: #FFF
+			left: 0
+			margin-left: 15%
+			border-radius: 20%
+			bottom: 30%
+
+
+.arrow
+	width: 100%
+	height: 10%
+	position: absolute
+	bottom: 5%
+	left: 0
+	
+	transition: all .2s ease
+	a 
+		position: absolute
+		height: 100%
+		width: 100%
+
+	&:hover
+			background-color: rgba(0,0,0,0.1)
+	&:active
+			background-color: rgba(226,133,134, 0.5)	
+	&::before
+		content: ''
+		width: 36%
+		height: 2px
+		background: #fff
+		z-index: 1
+		position: absolute
+		border-radius: 25%
+		transform: rotate(-45deg)
+		bottom: 40%
+		right: 20%
+	&::after
+		content: ''
+		width: 36%
+		height: 2px
+		background: #fff
+		z-index: 1
+		position: absolute
+		border-radius: 25%
+		transform: rotate(45deg)
+		bottom: 40%
+		left: 20%
+
+
+//слайд стрелки
+.arrow-right
+	position: absolute
+	top: 50%
+	right: 0%
+	height: 50px
+	width: 50px
+	transition: all .2s ease
+	&-2
+		top: 72%
+		position: absolute
+		z-index: 10
+		right: 0%
+		height: 50px
+		width: 50px
+		transition: all .2s ease
+		&:hover
+			background-color: rgba(0,0,0,0.1)
+		&:active
+			background-color: rgba(226,133,134, 0.5)	
+		&::before
+			content: ''
+			width: 36%
+			height: 2px
+			background: #fff
+			z-index: 1
+			position: absolute
+			border-radius: 25%
+			transform: rotate(45deg)
+			top: 35%
+			right: 30%
+		&::after
+			content: ''
+			width: 36%
+			height: 2px
+			background: #fff
+			z-index: 1
+			position: absolute
+			border-radius: 25%
+			transform: rotate(-45deg)
+			bottom: 35%
+			right: 30%
+
+
+
+	&:hover
+			background-color: rgba(0,0,0,0.1)
+	&:active
+			background-color: rgba(226,133,134, 0.5)	
+	&::before
+		content: ''
+		width: 36%
+		height: 2px
+		background: #fff
+		z-index: 1
+		position: absolute
+		border-radius: 25%
+		transform: rotate(45deg)
+		top: 35%
+		right: 30%
+	&::after
+		content: ''
+		width: 36%
+		height: 2px
+		background: #fff
+		z-index: 1
+		position: absolute
+		border-radius: 25%
+		transform: rotate(-45deg)
+		bottom: 35%
+		right: 30%
+	z-index: 100	
+
+.arrow-left
+	position: absolute
+	top: 50%
+	height: 50px
+	width: 50px
+	left: 0
+	transition: all .2s ease
+	&-2
+		position: absolute
+		top: 72%
+		height: 50px
+		width: 50px
+		left: 0
+		transition: all .2s ease
+		&:hover
+			background-color: rgba(0,0,0,0.1)
+		&:active
+			background-color: rgba(226,133,134, 0.5)	
+		&::before
+			content: ''
+			width: 36%
+			height: 2px
+			background: #fff
+			z-index: 1
+			position: absolute
+			border-radius: 25%
+			transform: rotate(-45deg)
+			top: 35%
+			right: 30%
+		&::after
+			content: ''
+			width: 36%
+			height: 2px
+			background: #fff
+			z-index: 1
+			position: absolute
+			border-radius: 25%
+			transform: rotate(45deg)
+			bottom: 35%
+			right: 30%
+	&:hover
+			background-color: rgba(0,0,0,0.1)
+	&:active
+			background-color: rgba(226,133,134, 0.5)	
+	&::before
+		content: ''
+		width: 36%
+		height: 2px
+		background: #fff
+		z-index: 1
+		position: absolute
+		border-radius: 25%
+		transform: rotate(-45deg)
+		top: 35%
+		right: 30%
+	&::after
+		content: ''
+		width: 36%
+		height: 2px
+		background: #fff
+		z-index: 1
+		position: absolute
+		border-radius: 25%
+		transform: rotate(45deg)
+		bottom: 35%
+		right: 30%
+	z-index: 100	
+//
+
+
+.h-text
+	transform: rotate(-90deg) 
+	font-size: 1.0em
+	font-weight: bold
+	text-transform: uppercase
+	white-space: nowrap
+ 	height: 50%
+	margin-top: 950%
+	text-align: left
+    
+			
+.logo-img
+	position: absolute
+	top: 50%
+	height: 204
+	margin-top: -102px
+	left: 50%
+	width: 530px
+	margin-left: -275px
+.text-logo
+	color: #fff
+	width: 550px
+	height: 100px
+	position: absolute
+	bottom: 10%
+	left: 10%
+	text-align: left
+	h1
+		font-size: 30px
+	p
+		font-size: 12px
+		font-weight: 100
+
+//слайдер
+.slide
+	background-size: cover
+	position: relative
+	background-repeat: no-repeat
+	height: 100%
+	width: 100%
+	
+	padding: 0
+	color: #fff
+	
+
+	h2
+		margin: 40px 0
+		margin-left: 12.5%
+
+#slide
+	width: 92%
+	margin-left: 4%
+
+.cards1, 
+.cards2,
+.cards3,
+.cards4,
+.cards5
+	
+		
+    				
+    
+		
+	
+
+	&::before
+
+		content: ''
+		position: absolute
+		width: 0
+		height: 0
+		border-top: 12.5px solid transparent
+		border-left: 25px solid rgba($main, 0.8)
+		border-bottom: 12.5px solid transparent
+		bottom: 53.7%
+		z-index: 10
+
+.card-content
+	
+	img 
+		
+		max-height: 205px
+		min-height: 205px
+		width: 280px
+
+	.like
+		position: absolute
+		top: 38%
+		margin-left: 240px
+		font-size: 10px
+
+.card-text
+	background-color: rgba(#FFF, 0.9)
+	color: #0C2438
+	height: 265px
+	width: 280px
+	text-align: left
+	font-family: 'Arial'
+
+	h1
+		margin: 0 20px
+		
+		text-transform: uppercase
+		font-family: 'Arial'
+	p 
+		margin: 0 20px
+		font-size: 14px
+		
+	.coment
+		border-top: 1px solid #D2D2D2
+		height: 10%
+		position: absolute
+		bottom: 0
+		width: 280px
+		color: #0C2438
+		p 
+			position: absolute
+			margin: 0
+			top: 20%
+			left: 10%
+		.fa 
+			color: #D2D2D2
+		.coment-m
+			position: absolute
+			width: 20%
+			height: 100%
+			background-color: #D2D2D2
+			right: 0
+			text-align: center
+			&:hover
+				background-color: rgba( 12,36,56,0.5)
+			.fa
+				color: #0C2438
+				font-size: 8px
+				margin-top: 20px
+
+
+
+
+.down-text
+	padding: 5% 10%
+	font-size: 14px
+
+.info-text
+	color: #fff
+	text-align: left
+	margin: 5% 0
+	h1 
+		font-size: 24px
+	p
+		font-size: 13px
+		padding-right: 20px
+
+.author
+	height: 100vh
+	width: 92%
+	margin-left: 4%
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		background: rgba($main, 0.4)
+.name
+	position: absolute
+	width: 50%
+	margin-left: 50%
+	top: 40%
+	color: #fff
+
+
+.footer
+	width: 100%
+	height: 100%
+	color: #fff
+	background: rgba(#000, .5 )
+
+	p 
+		padding: 0 20px
+		font-size: 13px
+
+	h4
+		margin: 0  10%	
+		margin-top: 40px
+		color: #0E3D5C
+
+	ul 
+		list-style-type: none
+		margin: 0 -6%
+		li 
+			margin: 10px 0
+			font-size: 13px
+
+
+
+@import "media" // Всегда в конце

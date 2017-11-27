@@ -82,7 +82,7 @@
   background: transparent; }
 
 * {
-  font-family: "Raleway"; }
+  font-family: 'Raleway','Roboto', sans-serif; }
 
 body {
   min-width: 320px;
@@ -125,7 +125,8 @@ span {
   float: right;
   background: transparent;
   border: none;
-  z-index: 150; }
+  z-index: 100;
+  outline: none; }
 
 #sandwich {
   position: relative;
@@ -179,6 +180,7 @@ span {
   background: #FD384B; }
 
 .top_menu {
+  z-index: 100;
   position: fixed;
   background-color: rgba(2, 2, 1, 0.9);
   width: 100%;
@@ -224,7 +226,8 @@ span {
       vertical-align: middle; }
 
 .home_text {
-  display: inline-block; }
+  display: inline-block;
+  z-index: 1; }
   .home_text h1 {
     font-size: 35px;
     background: rgba(0, 0, 0, 0.2);
@@ -249,16 +252,19 @@ span {
     font-size: 20px;
     font-weight: 600; }
   .info .section_content {
+    text-align: left;
     color: #682323; }
+    .info .section_content .fa-vk, .info .section_content .fa-github {
+      font-size: 30px; }
     .info .section_content p {
       font-weight: 400;
-      font-size: 17px;
+      font-size: 14px;
       margin-bottom: 20px; }
-  .info ul,
-  .info li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none; }
+  .info ul {
+    list-style-type: none;
+    font-size: 14px; }
+    .info ul li {
+      margin: 10px 20px; }
 
 .hero {
   text-align: center;
@@ -307,6 +313,8 @@ span {
 
 .resume {
   background-color: #333; }
+  .resume .fa {
+    margin: 0 10px; }
   .resume h2 {
     color: #FD384B;
     text-align: center;
@@ -365,17 +373,18 @@ span {
   padding: 5%; }
 
 .img {
-  -webkit-box-shadow: -5px -5px 100px #FD384B;
-          box-shadow: -5px -5px 100px #FD384B;
+  -webkit-box-shadow: -5px -5px 100px #5B1515;
+          box-shadow: -5px -5px 100px #5B1515;
   -webkit-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
-  transition: all .5s ease-out; }
+  transition: all .5s ease-out;
+  float: left; }
   .img:hover {
-    -webkit-transform: scale(1.111);
-        -ms-transform: scale(1.111);
-            transform: scale(1.111);
-    -webkit-box-shadow: -5px -5px 150px #5B1515;
-            box-shadow: -5px -5px 150px #5B1515; }
+    -webkit-box-shadow: -5px -5px 150px #FD384B;
+            box-shadow: -5px -5px 150px #FD384B;
+    -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+            transform: scale(1.01); }
 
 .main_footer {
   background: #333;
