@@ -1,4 +1,11 @@
+$(window).on('load', function() {
+  $('#preloader').delay().fadeOut('slow');
+});
+
+
 $(document).ready(function(){
+
+
 $('.cards').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 4,
