@@ -1,5 +1,23 @@
+
+$(window).on('load', function() {
+  $('#preloader').delay(100).fadeOut('slow');
+});
+
+
 $(document).ready(function(){
-	new WOW().init();
+	
+		
+
+
+
+
+
+
+
+
+
+
+
 
 
 	$(".button_menu").click(function() {
@@ -23,10 +41,8 @@ $(document).ready(function(){
 
 	});
 	
-
-
 	
-	
+	new WOW().init();
 
 });
 
